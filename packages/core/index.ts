@@ -466,6 +466,14 @@ export async function buildProject(
                 artifactsPath,
                 `bundle/appimage/${fileAppName}_${app.version}_${arch}.AppImage.tar.gz.sig`
               ),
+              join(
+                artifactsPath,
+                `bundle/flatpak/${fileAppName}_${app.version}_${arch}.flatpak`
+              ),
+              join(
+                artifactsPath,
+                `bundle/flatpak/${fileAppName}_${app.version}_${arch}.flatpak-assets.tar.gz`
+              ),
             ]
           }
         })
